@@ -1,5 +1,7 @@
 export interface Image {
-  title: string;
-  description: string;
-  imagePath: string;
+  [key: string]: {
+    heading: string;
+    description: string;
+    path: string;
+  };
 }

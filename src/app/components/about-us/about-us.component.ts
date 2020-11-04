@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Content } from '../../models/content.model';
+import { Image } from '../../models/image.model';
 import { ContentService } from '../../services/content.service';
 
 @Component({
@@ -10,12 +11,15 @@ import { ContentService } from '../../services/content.service';
 })
 export class AboutUsComponent implements OnInit {
   data: Content;
+  images: Image;
 
   constructor(private contentService: ContentService) { }
 
   ngOnInit(): void {
     this.getAboutUs();
+    this.getImages();
   }
+
 
   getAboutUs(): void {
     this.contentService.getContent().subscribe(
@@ -23,5 +27,9 @@ export class AboutUsComponent implements OnInit {
     );
   }
 
-
+  getImages(): void {
+    this.contentService.getImages().subscribe(
+      res => console.log(res)
+    );
+  }
 }
