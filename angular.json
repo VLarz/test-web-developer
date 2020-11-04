@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "scss"
         }
       },
       "root": "",
@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -92,7 +92,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -123,10 +123,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "test-web-developer",
-  "cli": {
-    "analytics": "729a6f7b-027d-480b-a37f-b5922dd68497"
-  }
+    }},
+  "defaultProject": "test-web-developer"
 }
