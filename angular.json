@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/materialize-css/dist/css/materialize.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/materialize-css/dist/js/materialize.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "test-web-developer"
+    }
+  },
+  "defaultProject": "test-web-developer",
+  "cli": {
+    "analytics": "35cfc743-4035-4744-8c88-3fb53abed22a"
+  }
 }
