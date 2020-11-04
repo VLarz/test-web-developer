@@ -12,14 +12,14 @@ import { ContentService } from '../../services/content.service';
 export class AboutUsComponent implements OnInit {
   data: Content;
   images: Image;
-
   constructor(private contentService: ContentService) { }
 
   ngOnInit(): void {
     this.getAboutUs();
     this.getImages();
+    console.log(this.images);
+    console.log(this.data);
   }
-
 
   getAboutUs(): void {
     this.contentService.getContent().subscribe(
@@ -28,8 +28,6 @@ export class AboutUsComponent implements OnInit {
   }
 
   getImages(): void {
-    this.contentService.getImages().subscribe(
-      res => console.log(res)
-    );
+    this.contentService.getImages().subscribe(res => this.images = res);
   }
 }

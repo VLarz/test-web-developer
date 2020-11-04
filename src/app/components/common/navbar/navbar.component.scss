@@ -5,6 +5,7 @@ nav {
   height: 100px;
   line-height: 100px;
   box-shadow: 0px 0px 1px 0px $black;
+  margin-bottom: 60px;
 }
 
 nav ul a {
@@ -14,14 +15,26 @@ nav ul a {
   font-weight: 600;
 }
 
+nav ul a span {
+  color: white;
+}
+
 nav ul a:hover {
   background-color: none;
   color: $blue;
 }
 
-.logo img {
+.brand-logo {
   vertical-align: middle;
-  padding-left: 25px;
+  padding: 15px 10px 10px 25px;
+}
+
+nav .sidenav-trigger {
+  padding: 15px 0 0 0;
+}
+
+.icon-black {
+  color: $black
 }
 
 #special {
@@ -34,4 +47,5 @@ nav ul a:hover {
     white 80%
   );
 }
+
 
