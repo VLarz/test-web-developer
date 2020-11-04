@@ -1,0 +1,37 @@
+@import '../../../scss/colors.scss';
+
+.sidenav-title {
+  background-color: #E4E2E3;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #E4E2E3;
+  margin-left: 80%
+}
+
+.container {
+  width: 95%;
+}
+// li {
+//   font-size: 14px;
+//   margin-left: 10px;
+//   list-style-type: circle !important;
+//   color: black;
+// }
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: $blue; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  margin-right: 5px;
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 1em; /* Also needed for space (tweak if needed) */
+  font-size: 20px;
+}
