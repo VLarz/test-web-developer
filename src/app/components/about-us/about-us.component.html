@@ -2,11 +2,29 @@
   <h4>Heading 1</h4>
   <h6>heading 2</h6>
   <div class="paragraph">
+    <!-- I use this instead of *ngFor -->
     <p>{{ data?.content?.paragraph_1 }}</p>
     <p>{{ data?.content?.paragraph_2 }}</p>
     <p>{{ data?.content?.paragraph_3 }}</p>
   </div>
-  <img [src]=" images?.man?.path " alt="">
-  <img [src]=" images?.wizard?.path " alt="">
-  <img [src]=" images?.beast?.path " alt="">
+
+  <div class="row">
+    <div class="col s12 m4">
+      <!-- <div class="img-container">
+        <img class="responsive-img" [src]=" images?.man?.path" alt="Man">
+      </div> -->
+      <div class="container">
+        <img [src]=" images?.man?.path" alt="Avatar" class="responsive-img">
+        <div class="overlay">
+          <div class="center white-text">{{ images?.man?.heading }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <img class="responsive-img" [src]=" images?.wizard?.path" alt="Wizard">
+    </div>
+    <div class="col s12 m4">
+      <img class="responsive-img" [src]=" images?.beast?.path" alt="Beast">
+    </div>
+  </div>
 </section>
