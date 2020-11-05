@@ -1,20 +1,21 @@
 <nav>
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo"><img src="assets/images/leaselabs_logo_fullstack_rgb.png"></a>
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="mdi mdi-menu icon-black"></i></a>
+    <a class="brand-logo"><img src="assets/images/leaselabs_logo_fullstack_rgb.png"></a>
+    <a data-target="mobile-demo" class="sidenav-trigger"><i class="mdi mdi-menu icon-black"></i></a>
     <ul class="right hide-on-med-and-down">
       <li><a routerLink='/home'>HOME</a></li>
-      <li><a href="#">OUR WORK</a></li>
+      <li><a routerLink='/our-work'>OUR WORK</a></li>
       <li><a routerLink='/about-us'>ABOUT US</a></li>
-      <li><a href="#">CONTACT US</a></li>
-      <li id="special"><a href="#"><span>SPECIALS</span></a></li>
+      <li><a routerLink='/contact-us'>CONTACT US</a></li>
+      <li id="special"><a routerLink='/specials'><span>SPECIALS</span></a></li>
     </ul>
   </div>
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
-  <li><a href="#">Sass</a></li>
-  <li><a href="#">Components</a></li>
-  <li><a href="#">Javascript</a></li>
-  <li><a href="#">Mobile</a></li>
+  <li><a class="sidenav-close" routerLink='/home'>HOME</a></li>
+  <li><a class="sidenav-close" routerLink='/our-work'>OUR WORK</a></li>
+  <li><a class="sidenav-close" routerLink='/about-us'>ABOUT US</a></li>
+  <li><a class="sidenav-close" routerLink='/contact-us'>CONTACT US</a></li>
+  <li id="special"><a class="sidenav-close center" routerLink='/specials'><span>SPECIALS</span></a></li>
 </ul>

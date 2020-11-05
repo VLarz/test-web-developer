@@ -8,6 +8,9 @@ import { SidenavComponent } from './components/common/sidenav/sidenav.component'
 import { HomeComponent } from './components/home/home.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HttpClientModule } from '@angular/common/http';
+import { OurWorkComponent } from './components/our-work/our-work.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { SpecialsComponent } from './components/specials/specials.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     SidenavComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    OurWorkComponent,
+    ContactUsComponent,
+    SpecialsComponent
   ],
   imports: [
     BrowserModule,
