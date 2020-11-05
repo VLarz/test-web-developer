@@ -1,1 +1,8 @@
-<p>our-work works!</p>
+<section class="content">
+  <h4>{{ data?.content?.heading }}</h4>
+  <h6>{{ data?.content?.subHeading }}</h6>
+  <div class="paragraph"
+  *ngFor="let paragraphList of data.content.paragraphs">
+  <p>{{ paragraphList }}</p>
+  </div>
+</section>

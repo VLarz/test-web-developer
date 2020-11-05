@@ -1,11 +1,10 @@
 <section class="content">
-  <h4>Heading 1</h4>
-  <h6>heading 2</h6>
-  <div class="paragraph">
-    <!-- I use this instead of *ngFor -->
-    <p>{{ data?.content?.paragraph_1 }}</p>
-    <p>{{ data?.content?.paragraph_2 }}</p>
-    <p>{{ data?.content?.paragraph_3 }}</p>
+  <h4> {{ data?.content?.heading }} </h4>
+  <h6>{{ data?.content?.subHeading }}</h6>
+
+  <div class="paragraph"
+  *ngFor="let paragraphList of data.content.paragraphs">
+  <p>{{ paragraphList }}</p>
   </div>
 
   <div class="row">

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Content } from '../../models/content.model';
+import { Section } from '../../models/section.model';
 import { Image } from '../../models/image.model';
 import { ContentService } from '../../services/content.service';
 
@@ -10,18 +10,16 @@ import { ContentService } from '../../services/content.service';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent implements OnInit {
-  data: Content;
+  data: Section;
   images: Image;
   constructor(private contentService: ContentService) { }
 
   ngOnInit(): void {
-    this.getAboutUs();
+    this.getAboutUsContent();
     this.getImages();
-    console.log(this.images);
-    console.log(this.data);
   }
 
-  getAboutUs(): void {
+  getAboutUsContent(): void {
     this.contentService.getContent().subscribe(
       res => this.data = res.find(x => x.id === 'about_us')
     );
