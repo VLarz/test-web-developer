@@ -10,21 +10,31 @@
 
   <div class="row">
     <div class="col s12 m4">
-      <!-- <div class="img-container">
-        <img class="responsive-img" [src]=" images?.man?.path" alt="Man">
-      </div> -->
       <div class="container">
         <img [src]=" images?.man?.path" alt="Avatar" class="responsive-img">
-        <div class="overlay">
-          <div class="center white-text">{{ images?.man?.heading }}</div>
+          <div class="text">
+            <h6>{{ images?.man?.heading }}</h6>
+            <p>{{ images?.man?.description }}</p>
         </div>
       </div>
     </div>
     <div class="col s12 m4">
-      <img class="responsive-img" [src]=" images?.wizard?.path" alt="Wizard">
+      <div class="container">
+        <img [src]=" images?.wizard?.path" alt="Avatar" class="responsive-img">
+          <div class="text">
+            <h6>{{ images?.wizard?.heading }}</h6>
+            <p>{{ images?.wizard?.description }}</p>
+        </div>
+      </div>
     </div>
     <div class="col s12 m4">
-      <img class="responsive-img" [src]=" images?.beast?.path" alt="Beast">
+      <div class="container">
+        <img [src]=" images?.beast?.path" alt="Avatar" class="responsive-img">
+          <div class="text">
+            <h6>{{ images?.beast?.heading }}</h6>
+            <p>{{ images?.beast?.description }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

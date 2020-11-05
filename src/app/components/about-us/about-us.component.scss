@@ -21,7 +21,7 @@
   height: auto;
 }
 
-.overlay {
+.text {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -34,7 +34,28 @@
   background-color: $blue;
 }
 
-.container:hover .overlay {
-  opacity: 0.5;
+.container:hover .text {
+  opacity: 1;
+  background-color: #00a7e094;
 }
+
+.text> h6 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  top: 35%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.text> p {
+  color: white;
+  font-weight: 300;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
 

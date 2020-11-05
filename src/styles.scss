@@ -7,13 +7,13 @@
   padding: 0 30px 30px 30px;
 }
 
-.content h4 {
+.content> h4 {
   font-weight: 500;
   color: $blue;
   margin: 0;
 }
 
-.content h6 {
+.content> h6 {
   font-weight: 500;
   margin: 0 0 0 10px;
   font-style: italic;
@@ -27,7 +27,7 @@
   margin-top: 30px;
 }
 
-.paragraph p {
+.paragraph> p {
   margin-bottom: 20px;
 }
 
