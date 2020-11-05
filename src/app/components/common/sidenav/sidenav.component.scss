@@ -19,19 +19,19 @@
 .container {
   width: 95%;
 }
-// li {
-//   font-size: 14px;
-//   margin-left: 10px;
-//   list-style-type: circle !important;
-//   color: black;
-// }
-
-ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: $blue; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
+ ul.modified> li::before {
+  content: "\2022";
+  color: $blue;
+  font-weight: bold;
   margin-right: 5px;
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: 1em; /* Also needed for space (tweak if needed) */
+  width: 1em;
+  margin-left: 1em;
   font-size: 20px;
+}
+
+.btn-floating{
+  position: fixed;
+  left: -26px;
+  z-index: 9999;
+  top: 50%;
 }

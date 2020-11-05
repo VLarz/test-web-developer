@@ -1,34 +1,43 @@
-<div class="container">
+<div class="container"
+*ngIf="currentWindowWidth >= 600">
   <div class="sidenav-title">SUBNAV</div>
   <div class="arrow-down"></div>
-  <ul>
+  <ul class="modified">
     <li><a href="#">Link 1</a></li>
     <li><a href="#">Link 2</a></li>
     <li><a href="#">Link 3</a></li>
   </ul>
   <div class="sidenav-title">RELATED LINKS</div>
   <div class="arrow-down"></div>
-  <ul>
+  <ul class="modified">
     <li><a href="#">Link 1</a></li>
     <li><a href="#">Link 2</a></li>
     <li><a href="#">Link 3</a></li>
   </ul>
 </div>
 
-<!-- 
+
 <ul id="slide-out" class="sidenav">
-  <li><div class="user-view">
-    <div class="background">
-      <img src="images/office.jpg">
+  <div class="container">
+    <div class="section">
+      <div class="sidenav-title">SUBNAV</div>
+      <div class="arrow-down"></div>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+      <div class="sidenav-title">RELATED LINKS</div>
+      <div class="arrow-down"></div>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
     </div>
-    <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-    <a href="#name"><span class="white-text name">John Doe</span></a>
-    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-  </div></li>
-  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-  <li><a href="#!">Second Link</a></li>
-  <li><div class="divider"></div></li>
-  <li><a class="subheader">Subheader</a></li>
-  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </div>
 </ul>
-<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+<a href="#" data-target="slide-out" class="btn-floating btn-medium blue sidenav-trigger"
+  *ngIf="currentWindowWidth <= 601">
+</a>
+
